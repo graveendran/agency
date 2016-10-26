@@ -11,6 +11,7 @@ var db = mongoose.connect('mongodb://localhost: 27017/agencyAPI');
 var Agency = require('./models/agencyModel');
 
 var app = express();
+var newFile = "test";
 
 //set the view engines to ejs
 app.set('view engine', 'ejs');
