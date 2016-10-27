@@ -1,5 +1,5 @@
 var agencyController = function(Agency){
-  
+
   var post = function(req, res){
         var newAgency = new Agency(req.body);
         newAgency.save(function(err){
