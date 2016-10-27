@@ -1,0 +1,15 @@
+
+
+
+//IGnore node_modules
+You need to untrack the directory from git using
+
+git rm -r --cached node_modules
+git commit -m "removing node_modules"
+
+--Before committing to master, get the latest from master/github and resolve conflicts in ATOM. Then commit the changes
+git checkout master
+git pull               # to update the state to the latest remote master state
+//git merge develop      # to bring changes to local master from your develop branch
+git commit -m "resovled merged conflicts"
+git push origin master # push current HEAD to remote master branch
