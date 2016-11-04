@@ -15,4 +15,4 @@ var routes = function(Agency){
     return agencyRouter;
 };
 
-module.exports = routes
+module.exports = routes;
