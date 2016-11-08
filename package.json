@@ -4,16 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha testagency"
   },
   "author": "Giri",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
     "ejs": "^2.5.2",
     "express": "^4.14.0",
     "gulp-mocha": "^3.0.1",
     "jslint": "^0.10.3",
+    "mocha": "^3.1.2",
     "mongoose": "^4.6.4",
     "nodemon": "^1.11.0",
     "request": "^2.76.0",

@@ -1,12 +1,12 @@
-var express = require("express");
-var request = require('request');
+const express = require("express");
+const request = require('request');
 
-var newRouter = express.Router();
+const newRouter = express.Router();
 
 newRouter.route('/')
-          .get(function(req, res){
+          .get((req, res) => {
             var tagline = "Any thing t you want ";
-            request.get('http://localhost:3000/api/agencies', function (err, response, body) {
+            request.get('http://localhost:3000/api/agencies', (err, response, body) => {
               console.log([err, JSON.parse(body)]);
 
               res.render('pages/index', {
@@ -14,11 +14,10 @@ newRouter.route('/')
                 tagline: tagline
               });
             });
-            //res.send("Hello books");
           });
 
 newRouter.route('/about')
-          .get(function(req, res){
+          .get((req, res) => {
               res.render('pages/about');
             });
 
